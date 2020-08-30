@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="result.html" method="GET">
+    <h1>Clarusway Survey</h1>
+    <p>Thank you for taking the time to help us improve the platform</p>
+    <label for="name"> Name: </label>
+    <br />
+    <input type="text" id="name" placeholder="Enter your surname" required/>
+    <br /><br />
+    <label for="e-mail"> Surname: </label>
+    <br />
+    <input type="text" id="e-mail" placeholder="Enter your e-mail" required/>
+    <br /><br />
+
+    <label for="role">Which option best describes your current role?</label>
+    <br />
+    <input list="roles" name="role" id="role">
+    <datalist id="roles">
+      <option value="Select current role">
+      <option value="asdf">
+      <option value="asdf2">
+      <option value="asdf3">
+      <option value="asdf4">
+      <option value="asdf5">
+    </datalist>
+
+    <br />
+    <p>Would you recommend Clarusway to a Freind?</p>
+    <label> <input type="radio" name="friend" /> Definitely, Yes </label>
+    <br />
+    <label> <input type="radio" name="friend" /> Maybe </label>
+    <br />
+    <label> <input type="radio" name="friend" /> Not sure </label>
+    <br />
+    <label> <input type="radio" name="friend" /> Definitely, No </label>
+    <br /><br />
+
+    <label for="fv">What is your favorite feature of Clarusway?</label>
+    <br />
+    <select name="fv" id="fv">
+      <option value="Select an option">Select current role</option>
+      <option value="asdf2">asdf2</option>
+      <option value="asdf3">asdf3</option>
+      <option value="asdf4">asdf4</option>
+    </select>
+
+    <br />
+    <p>What would you like to improved?(Check all that apply)</p>
+    <label> <input type="checkbox" name="improve" />Front-end </label>
+    <br />
+    <label> <input type="checkbox" name="improve1" />Back-end </label>
+    <br />
+    <label> <input type="checkbox" name="improve2" />Data-science </label>
+    <br />
+    <label> <input type="checkbox" name="improve3" />Additional Courses </label>
+    <br />
+    <br />
+    <label for="ta">Any comments or suggestions?</label> <br /><br />
+    <textarea
+      name="comments"
+      cols="30"
+      rows="10"
+      id="ta"
+      placeholder="Enter your comments here. Thanx for you"
+    >
+    </textarea>
+
+    <input type="submit" value="Submit" />
+  </form>
+  </body>
+</html>
